@@ -8,8 +8,8 @@
     --light-slate: #8e8f99;
     --cornflower: #e7e9fc;
     --cloud: #f4f4fd;
-    --navy-blue-modal: #2e2f42.40%;
-    --grey: #2e2f42.70%;
+    --navy-blue-modal: #2e2f42;
+    --grey: #2e2f42;
     --dairy: #fcfcfc;
 }
 
@@ -33,13 +33,21 @@ body {
 .bg-dark {
     background-color: var(--navy-blue);
     color: var(--white);
+    display: flex;
+    align-items: baseline;
 }
 
 .bg-contents {
     padding: 101.5px 156px;
 }
 
+.socials .bg-socials {
+    gap: 16px;
+}
+
 .hero {
+    background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-1.jpg);
+    background-size: cover;
     padding: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -64,7 +72,6 @@ h1 {
     list-style-type: none;
     justify-content: space-around;
 }
-
 
 .menu-link {
     color: var(--navy-blue);
@@ -108,19 +115,23 @@ a:hover {
 
 h2 {
     text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
 }
 
 ul {
-    list-style-type: none;
-    padding: 120px 156px;
+    list-style: none;
+    padding-left: 0;
     display: flex;
-    align-items: center;
-    gap: 24px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
 }
 
 .menu li {
-    align-items: end;
+    align-items: flex-end;
 }
 
 .menu {
@@ -151,14 +162,33 @@ ul {
     background-color: var(--ocean);
 }
 
+.adv-icon {
+    padding: 24px 100px;
+}
+
+
+.circle {
+    gap: 24px;
+}
+
+
 .teamcard {
     text-align: center;
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
 .card-item {
-    border: 1px groove var(--light-slate);
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
     padding: 5px;
 }
+
+
 
 section {
     padding: 120px 120px;
@@ -179,6 +209,30 @@ section {
     align-items: center;
 }
 
+.cards-item:hover,
+.cards-item:focus {
+    transition-duration: 2s;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.clients {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.clients-icon {
+    fill: var(--light-slate);
+    padding: 16px 32px;
+    border: 1px groove var(--light-slate);
+    border-radius: 3%;
+    
+}
+
+.clients-list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+}
 
 /*
 .button-box {
